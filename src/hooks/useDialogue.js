@@ -98,7 +98,6 @@ const useDialogue = () => {
               type="button"
               onClick={() => {
                 dialogueDetails?.fxntoCall();
-                console.log('i was clicked');
                 clearDialogue();
               }}
             >
@@ -111,7 +110,6 @@ const useDialogue = () => {
   }
 
   const displayDialogue = (options) => {
-    console.log('this options', options);
     setDialogueDetails({ ...options, show: true });
   };
 
